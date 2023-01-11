@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package db;
+
+option go_package = "VideoStorageService/pb";
+
+
+import "rpc_create_content.proto";
+
+service VideoStorageService {
+    rpc CreateContent (CreateContentRequest) returns (CreateContentResponse) {}
+}

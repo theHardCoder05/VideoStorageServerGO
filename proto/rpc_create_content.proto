@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package db;
+
+option go_package = "VideoStorageService/pb";
+
+import "content.proto";
+
+message CreateContentRequest {
+    string fileid = 1;
+    string name = 2;
+    int32 size = 3 ;
+
+}
+
+message CreateContentResponse {
+    Content content = 1;
+}

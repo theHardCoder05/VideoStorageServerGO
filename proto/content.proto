@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package db;
+
+option go_package = "VideoStorageService/pb";
+
+import "google/protobuf/timestamp.proto";
+
+message Content {
+    string fileid = 1;
+    string name = 2;
+    int32 size = 3 ;
+    google.protobuf.Timestamp created_at = 4;
+}
+
